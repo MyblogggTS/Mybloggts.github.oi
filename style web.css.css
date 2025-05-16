@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+color: #05f02c;
+
+}
+
+ body { 
+background: url(web\ design\ logo.png);
+background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
+  }
+
+body {
+  margin: 10;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #05f02c;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #05f02c;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #070707;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #05f02c;
+  color: rgb(31, 243, 3);
+}
+
+/* Style the content babes */
+.content {
+  background-color: #070707;
+  padding: 10px;
+  height: 200px; 
+}
+
+
+img {
+  display: block;
+  margin: auto;
+  background-color: #05f02c;
+  padding: 20px;
+}
+
+
+/* Style the footer */
+.footer {
+  background-color: #05f02c;
+}
