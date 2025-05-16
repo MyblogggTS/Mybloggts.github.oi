@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+  }
+  
+  /* Style the header */
+  .header {
+    color: #050505;
+    background-color: #0c0c0c;
+    background:url("2025-F1-drivers-photoshoot-800x450.webp"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.2em;
+    margin-top: -12px;
+    height:  10em;
+    padding: 20px;
+    text-align: center;
+    
+  }
+
+  .button {
+    font-family: 'Roboto'; sans-serif;
+    background-color: #f1f1f1;
+    border: none;
+    color: #050505;
+    padding: .25em;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 1.5em;
+    border-radius: 25px;
+    margin: 2.5%;
+  }
+  
+.topnav a{ 
+    padding-right: 10px;
+    display: inline; 
+}
+
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  .footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  img { 
+float:left;
+width: 100px;
+height: 200px;
+object-fit:contain ;
+  }
+
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+ 
