@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+  *{ 
+    box-sizing:border-box;
+  }
+
+  body { 
+background: url(TheLouvreMuseum-Paris-GettyImages-1193604575.webp);
+background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
+  }
+
+.wrapper {
+display: grid;
+justify-items: auto;
+grid-row-gap: 20px;
+grid-template-columns: 200px 250px;
+grid-template-areas: 
+"header  header"
+"topnav  topnav"
+"sidebar  sidebar"
+"footer  footer";
+
+background-color: transparent;
+color: rgb(100, 100, 93);
+padding: 0 20px 0 110px;
+margin: 0;
+position: relative;
+}
+
+.header {
+ grid-area:header ;
+}
+
+.topnav {
+grid-area:topnav ;
+}
+
+.sidebar {
+grid-area: sidebar;
+}
+
+.content {
+grid-area: content;
+}
+
+.sidebar2 {
+grid-area: sidebar2;
+}
+
+.footer {
+    grid-area: footer;
+    }
+
+.topnav a {
+padding-right: 50px;
+font-size: 2em;
+  text-decoration: none;
+}
+.box {
+  background-color: rgba(112, 104, 84, 0.904);
+color: #b1b4df;
+border-radius: 5px;
+  padding: 10px;
+  font-size: 1em;
+}
+.header, .footer {
+  background-color: rgba(87, 36, 36, 0.8);
+  justify-items: center;
+}
+
+.header { 
+background-color: solid;
+}
+
+.sidebar li {
+  list-style-type: none;
+}
+.sidebar   {
+  a:link, a:visted { color:whitesmoke}
+    a:focus, a:hover, a:active { color:whitesmoke; }
+}
+.sidebar2 {
+background-color:rgba(112, 104, 84, 0.904) ;
+color: #bea9a9; ;
+}
+.imgsize {
+  max-width: 50vw;
+  height: auto;
+  display: flex;
+  border:rgba(112, 104, 84, 0.904), solid 20px;
+  border-radius: 5px;
+}
+.flex { 
+    display: flex;
+justify-content: center;
+}
+
+a:link, a:visted { color:whitesmoke }
+    a:focus, a:hover, a:active { color:whitesmoke; } 
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1200px)
+{ 
+.wrapper { 
+display: grid;
+grid-gap: 1em;
+grid-template-columns: 50% 50%;
+grid-template-areas: 
+"header  header"
+"topnav  topnav"
+"sidebar  sidebar"
+"sidebar2  sidebar2"
+"footer  footer";
+}
+
+.box { 
+font-size: 1em;
+}
+.flex { 
+    flex-wrap: nowrap;
+    }
+
+} 
+
+@media only screen and (max-width: 800px) {
+
+.wrapper{ 
+display: block;
+width: 100%;
+}
+
+.box {
+float: left;
+width: 100%;
+font-size: 1em;
+}
+
+.imgsize {
+display: flex;
+justify-content: center;
+}
+.topnav {
+display: block;
+font-size: 1em;
+text-align: center;
+}
+
+} 
+
+@media only screen and (max-width: 700px) {
+
+}
